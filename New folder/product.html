@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link rel="stylesheet" href="product.css">
+</head>
+<body>
+    <header>
+        <button class="back-button" onclick="window.history.back();">← Back</button>
+        <div class="cart-icon" onclick="window.location.href='cart.html'">
+            <i class="fas fa-shopping-cart"></i>
+            <span id="cart-count">0</span>
+        </div>
+    </header>
+
+    <main>
+        <div class="product-container">
+            <div class="slideshow-container">
+
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 2</div>
+                    <img src="images/ss10.png" style="width:100%">
+                    <div class="text">Image 1</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 2</div>
+                    <img src="images/ss10 back.png" style="width:100%">
+                    <div class="text">Image 2</div>
+                </div>
+
+
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+            </div>
+
+            <div class="product-details">
+                <h1>Product Name</h1>
+                <p>Product Description</p>
+                <div class="options">
+                    <div class="sizes">
+                        <p>Select Size:</p>
+                        <span class="size-option" onclick="selectSize('S')" data-size="S">S</span>
+                        <span class="size-option" onclick="selectSize('M')" data-size="M">M</span>
+                        <span class="size-option" onclick="selectSize('L')" data-size="L">L</span>
+                        <span class="size-option" onclick="selectSize('XL')" data-size="L">XL</span>
+                    </div>
+                    <div class="colors">
+                        <p>Select Color:</p>
+                        <span class="color-option red" onclick="selectColor('red')"></span>
+                        <span class="color-option blue" onclick="selectColor('blue')"></span>
+                        <span class="color-option green" onclick="selectColor('green')"></span>
+                        <span class="color-option green" onclick="selectColor('white')"></span>
+                    </div>
+                </div>
+                <button id="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="feedback-section">
+            <h2>Customer Feedback</h2>
+            <textarea id="feedback" placeholder="Write your feedback..."></textarea>
+            <div class="stars">
+                <span class="star" data-rating="1">&#9733;</span>
+                <span class="star" data-rating="2">&#9733;</span>
+                <span class="star" data-rating="3">&#9733;</span>
+                <span class="star" data-rating="4">&#9733;</span>
+                <span class="star" data-rating="5">&#9733;</span>
+            </div>
+            <button id="submit-feedback">Submit Feedback</button>
+            <div id="feedback-list"></div>
+        </div>
+    </main>
+
+    <script src="product.js"></script>
+</body>
+</html>

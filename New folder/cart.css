@@ -1,0 +1,152 @@
+body {
+    margin: 0;
+    font-family: "Istok Web", sans-serif;
+    background-color: #161313;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #333;
+    padding: 10px;
+    color: white;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.back-button {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.5em;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.cart-icon {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.cart-icon i {
+    font-size: 1.5em;
+    color: #fff;
+}
+
+.cart-icon #cart-count {
+    background-color: #e60000;
+    border-radius: 50%;
+    padding: 2px 6px;
+    color: #fff;
+    font-size: 0.9em;
+}
+
+.cart {
+    padding: 20px;
+}
+
+.cart h2 {
+    display: inline-block;
+}
+
+#clear-cart {
+    background: #ff0000;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+#clear-cart:hover {
+    background: #cc0000;
+}
+
+.cart-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart-items {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #282828;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.cart-item img {
+    height: 80px;
+    margin-right: 20px;
+}
+
+.cart-item p {
+    margin: 0;
+    flex: 1;
+}
+
+.cart-item input {
+    width: 50px;
+    text-align: center;
+}
+
+.remove-item {
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: #ff0000;
+}
+
+.cart-summary {
+    flex: 1;
+    background: #444;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+}
+
+.cart-summary p {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+.cart-summary #total {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#checkout {
+    width: 100%;
+    padding: 10px;
+    background: #ffce00;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+#checkout:hover {
+    background: #e6b800;
+}

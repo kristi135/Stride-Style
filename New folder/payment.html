@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+    <header>
+        <h1>Payment</h1>
+    </header>
+    <main>
+        <form id="payment-form">
+            <div>
+                <label for="payment-method">Payment Method:</label>
+                <select id="payment-method" name="payment-method">
+                    <option value="credit-card">Credit Card</option>
+                    <option value="paypal">PayPal</option>
+                    <option value="bank-transfer">Bank Transfer</option>
+                </select>
+            </div>
+            <div id="credit-card-info">
+                <label for="cc-number">Credit Card Number:</label>
+                <input type="text" id="cc-number" name="cc-number">
+                <label for="cc-expiration">Expiration Date:</label>
+                <input type="text" id="cc-expiration" name="cc-expiration">
+                <label for="cc-cvc">CVC:</label>
+                <input type="text" id="cc-cvc" name="cc-cvc">
+            </div>
+            <button type="submit">Submit Payment</button>
+        </form>
+    </main>
+    <script src="payment.js"></script>
+</body>
+</html>
